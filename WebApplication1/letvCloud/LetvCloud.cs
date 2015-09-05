@@ -136,6 +136,10 @@ namespace WebApplication1.letvCloud
             {
                 res = "<embed src='http://yuntv.letv.com/bcloud.swf' allowFullScreen='true' quality='high' width='800' height='450' align='middle' allowScriptAccess='always' flashvars='" + str + "' type='application/x-shockwave-flash'></embed>";
             }
+            if (type == "json")
+            {
+                res = jsString;
+            }
             return res;
         }
 
